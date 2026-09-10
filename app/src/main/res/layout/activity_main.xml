@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi-Lo Counter"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overlay manuale di conteggio Hi-Lo.\nNon legge lo schermo, non interagisce con altre app.\nSei tu che tocchi le carte che vedi."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avvia overlay"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ferma overlay"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasce di vantaggio (edge stimato)\n\nTC &lt; 1  →  Banco +0,5% a +1,5%  (rosso)\nTC 1–2  →  Neutro ~0%  (giallo)\nTC 2–3  →  Tu +0,5% a +1%  (verde)\nTC 3–4  →  Tu +1% a +1,5%  (verde)\nTC 4–5  →  Tu +1,5% a +2%  (verde scuro)\nTC ≥ 5  →  Tu +2%+  (verde scuro)"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>
